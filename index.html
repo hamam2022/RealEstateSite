@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>الموقع العقاري</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- يمكن استخدام خريطة Google أو أي خدمة خرائط أخرى، وهنا فقط توضيح لكيفية وضع الـ Script -->
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script> -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>شركة العقارات</h1>
+    <nav>
+      <ul>
+        <li><a href="#">الرئيسية</a></li>
+        <li><a href="#">العقارات</a></li>
+        <li><a href="#">من نحن</a></li>
+        <li><a href="#">اتصل بنا</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- قسم البحث عن عقارات -->
+    <section class="search-section">
+      <h2>ابحث عن عقارك المفضل</h2>
+      <div class="search-box">
+        <input type="text" placeholder="ابحث عن مدينة، نوع العقار..." id="search-input">
+        <button onclick="searchProperties()">بحث</button>
+      </div>
+    </section>
+
+    <!-- قسم عرض العقارات -->
+    <section class="properties" id="properties-list">
+      <div class="property">
+        <img src="https://via.placeholder.com/300" alt="شقة">
+        <h3>شقة فاخرة</h3>
+        <p>شقة مميزة في وسط المدينة مع إطلالة جميلة.</p>
+        <p class="price">السعر: 500,000 ريال</p>
+        <button>تفاصيل أكثر</button>
+      </div>
+      <div class="property">
+        <img src="https://via.placeholder.com/300" alt="فيلا">
+        <h3>فيلا عائلية</h3>
+        <p>فيلا واسعة مع حديقة خاصة ومسبح.</p>
+        <p class="price">السعر: 1,500,000 ريال</p>
+        <button>تفاصيل أكثر</button>
+      </div>
+      <!-- عقارات إضافية حسب الحاجة -->
+    </section>
+
+    <!-- قسم الخريطة (مثال بسيط) -->
+    <section class="map-section">
+      <h2>مواقع العقارات على الخريطة</h2>
+      <div id="map">
+        <!-- هنا ستظهر الخريطة عند تفعيل Google Maps API -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 شركة العقارات. جميع الحقوق محفوظة.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
